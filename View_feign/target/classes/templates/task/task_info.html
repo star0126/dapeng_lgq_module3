@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/info-mgt.css" />
+    <link rel="stylesheet" href="../css/mycss/task_info.css" />
+    <title>task-info</title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table-zh-CN.min.js"></script>
+    <script src="../js/myjs/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script>
+</head>
+<body >
+<div class="title"><h2>任务列表</h2></div>
+
+<div class="l_left" style="width: 100%">
+    <div class="query">
+        <div class="tabe_bot">
+            <div class="l_left" style="margin-left: 20px">
+                <label>类型：</label>
+                <select name="taskType" id="taskType" >
+                    <option value="">全部</option>
+                    <option value="运营类型">运营类型</option>
+                    <option value="销售类型">销售类型</option>
+                </select>
+            </div>
+            <div class="l_left">
+                <label>创建者：</label>
+                <select name="taskCreator" id="taskCreator">
+                    <option value="">全部</option>
+                </select>
+            </div>
+            <div class="l_left">
+                <label>部门：</label>
+                <select name="creatorDept" id="creatorDept" >
+                    <option value="" >全部</option>
+                    <option value=2>运营部</option>
+                    <option value=3>销售部</option>
+                    <option value=4>运营一组</option>
+                    <option value=5>运营二组</option>
+                    <option value=6>销售一组</option>
+                    <option value=7>销售二组</option>
+                </select>
+            </div>
+            <div class="l_left">
+                <label>执行者：</label>
+                <select name="taskExecutor" id="taskExecutor" >
+                    <option value="">全部</option>
+                </select>
+            </div>
+            <div class="l_left">
+                <label>状态：</label>
+                <select name="taskStatus" id="taskStatus">
+                    <option value="">全部</option>
+                    <option value="已保存">已保存</option>
+                    <option value="已创建">已创建</option>
+                    <option value="执行中">执行中</option>
+                    <option value="已完成">已完成</option>
+                    <option value="已逾期">已逾期</option>
+                </select>
+            </div><br>
+            <div class="l_left">
+                <label>创建时间：</label>
+                <input class="Wdate" type="text" onClick="WdatePicker()" name="bgtime" id="btime"   value="" >至
+                <input class="Wdate" type="text" onClick="WdatePicker()" name="edtime" id="etime"   value="" >
+                <input type="hidden" name="bgtime" id="bgtime" value="">
+                <input type="hidden" name="edtime" id="edtime" value="">
+            </div>
+            <div class="l_left">
+                <label>排序</label>
+                <select name="sort" id="sort">
+                    <option value="">不排序</option>
+                    <option value="task_type">任务类型</option>
+                    <option value="task_creator">创建者</option>
+                    <option value="creator_dept">部门</option>
+                    <option value="creat_time">创建时间</option>
+                    <option value="end_time">截至时间</option>
+                    <option value="plan_end_time">提交时间</option>
+                    <option value="task_executor">执行者</option>
+                    <option value="task_status">状态</option>
+                </select>
+            </div>
+            <br>
+            <button class="tabe_btn " onclick="getData()">查询</button>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="table-operate ue-clear">
+        <a class="add"  href="/task/add">添加</a>
+        <a href="javascript:;" class="del" onclick="del()">删除</a>
+
+    </div>
+    <div class="table-box">
+        <table id="table" class="table_style"></table>
+    </div>
+    <div class="pagination ue-clear"></div>
+</div>
+
+<!--模态框2-->
+<div class="modal fade" id="alertModel" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 400px;">
+            <div class="modal-header" style="height: 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;vertical-align: middle;">
+                <p style="color: blue;font-family: 宋体;font-size: 20px;font-weight: bolder" id="info-modal">
+
+                </p>
+            </div>
+            <div class="modal-footer" style="height: 50px;text-align: center;vertical-align: middle;" >
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/myjs/task_info.js"></script>
+</html>

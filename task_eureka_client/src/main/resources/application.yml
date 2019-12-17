@@ -18,4 +18,4 @@ info: #在配置信息中加载关于
 
 spring:
   application:
-    name: task_eureka_client
+    name: task-eureka-client

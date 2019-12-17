@@ -18,4 +18,4 @@ info: #在配置信息中加载关于
 
 spring:
   application:
-    name: user_eureka_client
+    name: user-eureka-client

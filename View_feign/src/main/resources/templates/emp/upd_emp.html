@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/info-mgt.css" />
+    <link rel="stylesheet" href="../css/mycss/task_add.css" />
+    <title>Emp-Upd</title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table-zh-CN.min.js"></script>
+</head>
+<body>
+<div class="l_left right" style="height: 100%;width: 100%;padding-bottom: 30px;margin-top: 20px;border: 1px #c1d3de solid;">
+    <h3 style="color: deepskyblue">修改个人信息</h3>
+
+
+
+    <!--<div style="margin:20px 0 20px 20px">
+        <label>工号：</label>
+        <input id="empId" name="empId" th:value="${session.emp.empId}"
+               type="text" readonly="readonly"><span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empId_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>姓名：</label>
+        <input id="empName" name="empName" th:value="${session.emp.empName}"
+               type="text" >
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empName_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>姓别：</label>
+        <select id="empSex" name="empSex" th:value="${session.emp.empSex}" >
+            <option th:selected="${session.emp.empSex=='女'}" value="女">女</option>
+            <option th:selected="${session.emp.empSex=='男'}" value="男">男</option>
+        </select>
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empSex_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>部门：</label>
+        <select id="empDept" name="empDept"  th:value="${session.emp.empDept}">
+            <option th:selected="${session.emp.empDept=='2'}" value='2'>运营部</option>
+            <option th:selected="${session.emp.empDept=='3'}" value='3'>销售部</option>
+            <option th:selected="${session.emp.empDept=='4'}" value='4'>运营一组</option>
+            <option th:selected="${session.emp.empDept=='5'}" value='5'>运营二组</option>
+            <option th:selected="${session.emp.empDept=='6'}" value='6'>销售一组</option>
+            <option th:selected="${session.emp.empDept=='7'}" value='7'>销售二组</option>
+        </select>
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empDept_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>职位：</label>
+        <select id="empRole" name="empRole"  th:value="${session.emp.empRole}">
+            <option th:selected="${session.emp.empRole=='项目经理'}" value="项目经理">项目经理</option>
+            <option th:selected="${session.emp.empRole=='组长'}" value='组长'>组长</option>
+            <option th:selected="${session.emp.empRole=='职员'}" value='职员'>职员</option>
+        </select>
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empRole_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>状态：</label>
+        <select id="empStatus" name="empStatus"  th:value="${session.emp.empStatus}">
+            <option th:selected="${session.emp.empStatus=='实习'}" value="实习">实习</option>
+            <option th:selected="${session.emp.empStatus=='正式'}" value='正式'>正式</option>
+            <option th:selected="${session.emp.empStatus=='离职'}" value='离职'>离职</option>
+        </select>
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empStatus_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>邮箱：</label>
+        <input type="email" id="empEmail"  name="empEmail" th:value="${session.emp.empEmail}">
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empEmail_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>电话：</label>
+        <input type="text" id="empPhone"  name="empPhone" th:value="${session.emp.empPhone}">
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empPhone_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>-->
+
+
+
+    <div class="clear"></div>
+    <div class="bot_btn">
+        <button class="btn" onclick="upds()">提交</button>
+        <button class="btn btn1" onclick="checkCancel()">取消</button>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+
+<!--模态框2-->
+<div class="modal fade" id="alertModel" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 400px;">
+            <div class="modal-header" style="height: 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;vertical-align: middle;">
+                <p style="color: blue;font-family: 宋体;font-size: 20px;font-weight: bolder" id="info-modal">
+
+                </p>
+            </div>
+            <div class="modal-footer" style="height: 50px;text-align: center;vertical-align: middle;" >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--模态框3-->
+<div class="modal fade" id="alertModel2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 400px;">
+            <div class="modal-header" style="height: 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;vertical-align: middle;">
+                <p style="color: blue;font-family: 宋体;font-size: 20px;font-weight: bolder" id="info-modal2">
+
+                </p>
+            </div>
+            <div class="modal-footer" style="height: 50px;text-align: center;vertical-align: middle;" >
+                <button type="button" class="btn btn-default" data-dismiss="modal"
+                        style="width: 50px;height: 25px;"
+                        onclick="oks(0)">确定</button>
+                <button type="button" class="btn btn-primary" id="saveConfirmBtn"
+                        style="width: 50px;height: 25px;"
+                        onclick="oks(1)">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/myjs/upd_emp.js"></script>
+</html>

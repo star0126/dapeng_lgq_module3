@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link href="css/login2.css" rel="stylesheet" type="text/css" />
+    <title>Login</title>
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="images/login.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <script src="js/bootstrap-table-zh-CN.min.js"></script>
+
+</head>
+<body>
+<h1 style="color: dodgerblue;font-family: 幼圆 ">登录注册页面<sup>V1.0</sup></h1>
+
+<div class="login" style="margin-top:50px;">
+
+    <div class="header">
+        <div class="switch" id="switch"><a class="switch_btn_focus" id="switch_qlogin" href="javascript:void(0);" tabindex="7">快速登录</a>
+            <a class="switch_btn" id="switch_login" href="javascript:void(0);" tabindex="8">快速注册</a><div class="switch_bottom" id="switch_bottom" style="position: absolute; width: 64px; left: 0px;"></div>
+        </div>
+    </div>
+
+
+    <div class="web_qr_login" id="web_qr_login" style="display: block; height: 235px;">
+
+        <!--登录-->
+        <div class="web_login" id="web_login">
+
+
+            <div class="login-box">
+
+
+                <div class="login_form">
+                        <div id="emp-info" style="color: red"></div>
+                        <div class="uinArea" id="uinArea">
+                            <label class="input-tips" for="empId" >帐号：</label>
+                            <div class="inputOuter" id="uArea">
+
+                                <input type="text" id="empId" name="empId" class="inputstyle"/>
+                                <div id="empId-info" style="color: red"></div>
+                            </div>
+                        </div>
+                        <div class="pwdArea" id="pwdArea">
+                            <label class="input-tips" for="empPwd">密码：</label>
+                            <div class="inputOuter" id="pArea">
+
+                                <input type="password" id="empPwd" name="empPwd" class="inputstyle"/>
+                                <div id="empPwd-info" style="color: red"></div>
+                            </div>
+                        </div>
+
+                        <div style="padding-left:50px;margin-top:20px;">
+                            <input type="button" value="登 录" style="width:150px;" class="button_blue" onclick="logins()" />
+                        </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--登录end-->
+    </div>
+
+    <!--注册-->
+    <div class="qlogin" id="qlogin" style="display: none; ">
+
+        <div class="web_login">
+            <input type="hidden" name="to" value="reg"/>
+            <input type="hidden" name="did" value="0"/>
+            <ul class="reg_form" id="reg-ul">
+                <li>
+
+                    <label for="empId"  class="input-tips2">工号：</label>
+                    <div class="inputOuter2">
+                        <input type="text" id="empIds" name="empId" value="" placeholder="选择部门获取工号" class="inputstyle2" readonly="readonly"/>
+                        <span style="color: red;font-weight: bolder">*</span>
+                        <div id="empIds_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <label for="empName" class="input-tips2">姓名：</label>
+                    <div class="inputOuter2">
+                        <input type="text" id="empName"  name="empName" value="" maxlength="16" class="inputstyle2"/>
+                        <span style="color: red;font-weight: bolder">*</span>
+                        <div id="empName_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+                <li>
+                    <label for="empPwd2" class="input-tips2">密码：</label>
+                    <div class="inputOuter2">
+                        <input type="password" id="empPwd2" name="empPwd2" value="123456" maxlength="16" class="inputstyle2" readonly="readonly" />
+                        <span style="color: red;font-weight: bolder">*</span>
+                        <div id="empPwd2_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+
+                <li>
+                    <label for="empSex" class="input-tips2">性别：</label>
+                    <div class="inputOuter2">
+                        <select id="empSex" name="empSex" maxlength="10" class="inputstyle2">
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select><span style="color: red;font-weight: bolder">*</span>
+                        <div id="empSex_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <label for="empDept" class="input-tips2">部门：</label>
+                    <div class="inputOuter2">
+                        <select id="empDept" name="empDept" maxlength="10" class="inputstyle2">
+                            <option value="">全部</option>
+                            <option value="2">运营部</option>
+                            <option value="3">销售部</option>
+                            <option value="4">运营一组</option>
+                            <option value="5">运营二组</option>
+                            <option value="6">销售一组</option>
+                            <option value="7">销售二组</option>
+                        </select><span style="color: red;font-weight: bolder">*</span>
+                        <div id="empDept_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <label for="empRole" class="input-tips2">职位：</label>
+                    <div class="inputOuter2">
+                        <select id="empRole" name="empRole" maxlength="10" class="inputstyle2">
+                            <option value="项目经理">项目经理</option>
+                            <option value="组长">组长</option>
+                            <option value="职员">职员</option>
+                        </select><span style="color: red;font-weight: bolder">*</span>
+                        <div id="empRole_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <label for="empStatus" class="input-tips2">状态：</label>
+                    <div class="inputOuter2">
+                        <select id="empStatus" name="empStatus" maxlength="10" class="inputstyle2">
+                            <option value="实习">实习</option>
+                            <option value="正式">正式</option>
+                            <option value="离职">离职</option>
+                        </select><span style="color: red;font-weight: bolder">*</span>
+                        <div id="empStatus_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <label for="empEmail" class="input-tips2">邮箱：</label>
+                    <div class="inputOuter2">
+                        <input type="email" id="empEmail"  name="empEmail" value=""  class="inputstyle2"/>
+                        <span style="color: red;font-weight: bolder">*</span>
+                        <div id="empEmail_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <label for="empPhone" class="input-tips2">电话：</label>
+                    <div class="inputOuter2">
+                        <input type="text" id="empPhone"  name="empPhone" value="" maxlength="16" class="inputstyle2"/>
+                        <span style="color: red;font-weight: bolder">*</span>
+                        <div id="empPhone_info" style="color: red;"></div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="inputArea">
+                        <input type="button" id="reg"  style="margin-top:10px;margin-left:85px;" class="button_blue" value="注册"/>
+                    </div>
+
+                </li><div class="cl"></div>
+            </ul>
+
+
+        </div>
+
+
+    </div>
+    <!--注册end-->
+
+    <!--模态框2-->
+    <div class="modal fade" id="alertModel2" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 400px;">
+                <div class="modal-header" style="height: 50px;">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body" style="text-align: center;vertical-align: middle;">
+                    <p style="color: blue;font-family: 宋体;font-size: 20px;font-weight: bolder" id="info-modal2">
+
+                    </p>
+                </div>
+                <div class="modal-footer" style="height: 50px;text-align: center;vertical-align: middle;" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="jianyi">*推荐使用ie8或以上版本ie浏览器或Chrome内核浏览器访问本站</div>
+</body>
+<script type="text/javascript" src="js/myjs/login.js"></script>
+</html>

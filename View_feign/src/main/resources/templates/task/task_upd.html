@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/info-mgt.css" />
+    <link rel="stylesheet" href="../css/mycss/task_add.css" />
+    <title>task_upd</title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table-zh-CN.min.js"></script>
+    <script src="../js/myjs/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script>
+</head>
+<body>
+<div class="l_left right" style="height: 100%;width: 100%;padding-bottom: 30px;margin-top: 20px;border: 1px #c1d3de solid;">
+<h3 style="color: deepskyblue">修改项目信息</h3>
+
+
+    <!--<input type="hidden" name="taskId" th:value="${tk.taskId}" id="taskId">
+    <div style="margin:20px 0 20px 20px">
+        <label>任务名称：</label>
+        <input id="taskName" name="taskName" th:value="${tk.taskName}" type="text" ><span style="color: red;font-weight: bolder">*</span><br>
+        <div id="taskName_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>任务类型：</label>
+        <select id="taskType" name="taskType" th:field="${tk.taskType}" th:value="${tk.taskType}">
+            <option th:selected="${tk.taskType=='运营类型'}" value="运营类型">运营类型</option>
+            <option th:selected="${tk.taskType=='销售类型'}" value="销售类型">销售类型</option>
+        </select><span style="color: red;font-weight: bolder">*</span><br>
+        <div id="taskType_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>创建者编号：</label>
+        <input id="taskCreator" name="taskCreator" th:value="${tk.taskCreator}" type="text" readonly="readonly">
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="taskCreator_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>创建者部门：</label>
+        <select id="creatorDept" name="creatorDept" th:field="${tk.creatorDept}" th:value="${tk.creatorDept}" disabled="disabled">
+            <option th:selected="${tk.creatorDept=='2'}" value="2">运营部</option>
+            <option th:selected="${tk.creatorDept=='3'}" value="3">销售部</option>
+            <option th:selected="${tk.creatorDept=='4'}" value="4">运营一组</option>
+            <option th:selected="${tk.creatorDept=='5'}" value="5">运营二组</option>
+            <option th:selected="${tk.creatorDept=='6'}" value="6">销售一组</option>
+            <option th:selected="${tk.creatorDept=='7'}" value="7">销售二组</option>
+        </select><span style="color: red;font-weight: bolder">*</span><br>
+        <div id="creatorDept_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>任务创建时间：</label>
+        <input id="creatTime" name="creatTime" class="Wdate" onClick="WdatePicker()"
+               th:value="${#dates.format(tk.creatTime,'yyyy-MM-dd')}" type="text">
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="creatTime_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>任务截至时间：</label>
+        <input id="endTime" name="endTime" class="Wdate" onClick="WdatePicker()"
+               th:value="${#dates.format(tk.endTime,'yyyy-MM-dd')}" type="text">
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="endTime_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <input type="hidden" name="teor" id="teor" th:value="${tk.taskExecutor}">
+        <label>任务执行者：</label>
+        <select id="taskExecutor" name="taskExecutor">
+            <option value="">全部</option>
+        </select><span style="color: red;font-weight: bolder">*</span><br>
+        <div id="taskExecutor_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>状态：</label>
+        <input id="taskStatus " name="taskStatus" th:value="${tk.taskStatus}" type="text" readonly="readonly">
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="taskStatus_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label style="float: left;line-height: 60px">任务说明：</label>
+        <textarea id="taskSpec" style="width: 50%" th:text="${tk.taskSpec}"></textarea>
+    </div>-->
+    <div class="clear"></div>
+    <div class="bot_btn">
+        <button class="btn" onclick="iso()">确定</button>
+        <button class="btn btn1" onclick="noo()">取消</button>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+
+<!--模态框2-->
+<div class="modal fade" id="alertModel" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 400px;">
+            <div class="modal-header" style="height: 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;vertical-align: middle;">
+                <p style="color: blue;font-family: 宋体;font-size: 20px;font-weight: bolder" id="info-modal">
+
+                </p>
+            </div>
+            <div class="modal-footer" style="height: 50px;text-align: center;vertical-align: middle;" >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--模态框3-->
+<div class="modal fade" id="alertModel2" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 400px;">
+            <div class="modal-header" style="height: 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;vertical-align: middle;">
+                <p style="color: blue;font-family: 宋体;font-size: 20px;font-weight: bolder" id="info-modal2">
+
+                </p>
+            </div>
+            <div class="modal-footer" style="height: 50px;text-align: center;vertical-align: middle;" >
+                <button type="button" class="btn btn-default" data-dismiss="modal"
+                        style="width: 50px;height: 25px;"
+                        onclick="oks(0)">确定</button>
+                <button type="button" class="btn btn-primary" id="saveConfirmBtn"
+                        style="width: 50px;height: 25px;"
+                        onclick="oks(1)">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="../js/myjs/task_upd.js"></script>
+</html>

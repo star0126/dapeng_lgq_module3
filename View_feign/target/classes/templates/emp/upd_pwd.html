@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/bootstrap-table.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/info-mgt.css" />
+    <link rel="stylesheet" href="../css/mycss/task_add.css" />
+    <title>Emp-Upd</title>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap-table.js"></script>
+    <script src="../js/bootstrap-table-zh-CN.min.js"></script>
+</head>
+<body>
+<div class="l_left right" style="height: 100%;width: 100%;padding-bottom: 30px;margin-top: 20px;border: 1px #c1d3de solid;">
+    <h3 style="color: deepskyblue">修改密码</h3>
+
+
+
+   <!-- <div style="margin:20px 0 20px 20px">
+        <label>工号：</label>
+        <input id="empId" name="empId" th:value="${session.emp.empId}"
+               type="text" readonly="readonly">
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>姓名：</label>
+        <input id="empName" name="empName" th:value="${session.emp.empName}"
+               type="text" readonly="readonly" >
+    </div>
+    <div style="margin:0 0 20px 20px">
+        <label>旧密码：</label>
+        <input id="empPwd" name="empPwd" value=""
+               type="password"  >
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empPwd_info" style="color: red;font-weight: bolder;margin-left: 205px;">
+    </div>
+    </div>
+
+    <div style="margin:0 0 20px 20px">
+        <label>新密码：</label>
+        <input id="empPwd1" name="empPwd1" value=""
+               type="password"  >
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empPwd1_info" style="color: red;font-weight: bolder;margin-left: 205px;">
+        </div>
+    </div>
+
+    <div style="margin:0 0 20px 20px">
+        <label>确认密码：</label>
+        <input id="empPwd2" name="empPwd2" value=""
+               type="password"  >
+        <span style="color: red;font-weight: bolder">*</span><br>
+        <div id="empPwd2_info" style="color: red;font-weight: bolder;margin-left: 205px;">
+        </div>
+    </div>-->
+
+    <div class="clear"></div>
+    <div class="bot_btn">
+        <button class="btn" onclick="okks()">确定</button>
+        <button class="btn btn1" onclick="checkCancel()">取消</button>
+    </div>
+
+    <div class="clear"></div>
+
+</div>
+
+<!--模态框2-->
+<div class="modal fade" id="alertModel" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="width: 400px;">
+            <div class="modal-header" style="height: 50px;">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;vertical-align: middle;">
+                <p style="color: blue;font-family: 宋体;font-size: 20px;font-weight: bolder" id="info-modal">
+
+                </p>
+            </div>
+            <div class="modal-footer" style="height: 50px;text-align: center;vertical-align: middle;" >
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/myjs/upd_pwd.js"></script>
+</html>

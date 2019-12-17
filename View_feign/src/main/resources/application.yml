@@ -1,0 +1,22 @@
+server:
+  port: 8765
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: view_feign_8765 #修改本服务在Eureka中的服务名称
+    prefer-ip-address: true     #标注此配置查看此微服务的访问路径时可以显示IP地址
+
+  info: #在配置信息中加载关于
+    app.name: view_feign_8765
+    company.name: www.test.dapengjiaoyu.com
+    build.artifactId: "@project.artifactId@"
+    build.version: "@project.version@"
+
+
+spring:
+  application:
+    name: view-feign

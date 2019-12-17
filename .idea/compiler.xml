@@ -10,6 +10,7 @@
         <module name="eureka_server" />
         <module name="task_eureka_client" />
         <module name="user_eureka_client" />
+        <module name="view_feign" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="eureka_server" options="-parameters" />
       <module name="task_eureka_client" options="-parameters" />
       <module name="user_eureka_client" options="-parameters" />
+      <module name="view_feign" options="-parameters" />
     </option>
   </component>
 </project>

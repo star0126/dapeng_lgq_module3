@@ -1,13 +1,418 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1cc22c6-f68c-4711-a70c-b470fcbe8b22" name="默认更改列表" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/eureka_server/target/" />
-    <ignored path="$PROJECT_DIR$/user_eureka_client/target/" />
-    <ignored path="$PROJECT_DIR$/task_eureka_client/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="c1cc22c6-f68c-4711-a70c-b470fcbe8b22" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/ViewFeignApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/TaskClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/userClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/controllers/ViewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/info-mgt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/jquery.dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/login2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/mycss/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/mycss/task_add.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/css/mycss/task_info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/LOGO74.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/PDF Files.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/addico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/bg03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/bookico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/btnbg01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/btnbg02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/centerbottombg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/centerleft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/centerright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/centertopbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/check-select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/close3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/close4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/countbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/date.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/datecion01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/dateico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/delico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/dialog_btnbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/dialogbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/dialogbtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/dico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/document.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/downcenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/downleft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/dright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/edtico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/email03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/file02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/file03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/foot01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/foot02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/footbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/formbtnbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/formbtnbg01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/get.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico91.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ico92.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/icon99.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/indicator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/infor_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/input_psw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/input_psw_focus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/input_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/input_user_focus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/inputbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/leave01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/leftbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/lefthoverbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/leftico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/leftjt01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/leftjt02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/leftjt03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/leftjt04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/lefttop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/lefttopbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/licon01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/liicon10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/listico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_btn_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_panel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_pro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_pro1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_wel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/login_yzm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/logoff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/myFiles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/myflie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/others.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/personal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/ph_list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/posintion01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/righttitlebig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/righttop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/rmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/rmail1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/selectxl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/sent01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/signout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/tabbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/table_print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/tablelistbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/titlebg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/titlebg01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/titleico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/tjico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/tjico_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/tjico_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/toolbarbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/top_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/top_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/topbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/topcenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/toplight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/topline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/topmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/topuser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/write.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/images/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/jquery-1.9.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/jquery.dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/My97DatePicker/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_upd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/upd_emp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/upd_pwd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/emp_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/upd_emp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/upd_pwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/sys/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_upd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/META-INF/view_feign.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/ViewFeignApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/config/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/consumption/TaskClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/consumption/UserClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/controllers/ViewController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/bootstrap-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/info-mgt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/jquery.dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/login2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/mycss/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/mycss/task_add.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/css/mycss/task_info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/LOGO74.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/PDF Files.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/addico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/bg03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/bookico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/btnbg01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/btnbg02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/centerbottombg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/centerleft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/centerright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/centertopbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/check-select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/close3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/close4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/countbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/date.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/datecion01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/dateico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/delico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/dialog_btnbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/dialogbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/dialogbtn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/dico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/document.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/downcenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/downleft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/dright.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/edtico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/email03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/file02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/file03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/foot01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/foot02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/footbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/formbtnbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/formbtnbg01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/get.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico91.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ico92.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/icon99.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/indicator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/infor_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/input_psw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/input_psw_focus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/input_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/input_user_focus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/inputbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/leave01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/leftbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/lefthoverbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/leftico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/leftjt01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/leftjt02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/leftjt03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/leftjt04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/lefttop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/lefttopbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/licon01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/liicon10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/listico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_btn_h.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_panel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_password.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_pro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_pro1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_wel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/login_yzm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/logoff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/more.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/myFiles.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/myflie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/others.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/personal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/ph_list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/posintion01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/righttitlebig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/righttop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/rmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/rmail1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/selectxl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/sent01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/signout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/tabbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/table_print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/tablelistbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/titlebg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/titlebg01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/titleico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/tjico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/tjico_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/tjico_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/toolbarbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/top_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/top_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/topbg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/topcenter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/toplight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/topline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/topmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/topuser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/write.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/images/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/bootstrap-table-zh-CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/bootstrap-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/jquery-1.9.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/jquery.dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/WdatePicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/lang/zh-tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/skin/WdatePicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/skin/datePicker.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/skin/default/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/skin/default/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/skin/whyGreen/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/skin/whyGreen/datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/My97DatePicker/skin/whyGreen/img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_upd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/upd_emp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/upd_pwd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/emp_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/upd_emp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/upd_pwd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/sys/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_upd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/入职培训.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/数据库设计.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka_server/target/classes/META-INF/eureka_server.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_eureka_client/target/classes/com/system/controllers/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_eureka_client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_eureka_client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_eureka_client/user_eureka_client.iml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,46 +421,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka_server/src/main/java/com/system/EurekaServerApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/TaskEurekaClientApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/UserEurekaClientApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -63,27 +428,13 @@
       </list>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/eureka_server/src/main/java/com/system/EurekaServerApplication.java" />
-        <option value="$PROJECT_DIR$/eureka_server/src/main/resources/appication.yml" />
-        <option value="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/UserEurekaClientApplication.java" />
-        <option value="$PROJECT_DIR$/eureka_server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka_server/pom.xml" />
-        <option value="$PROJECT_DIR$/user_eureka_client/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/task_eureka_client/pom.xml" />
-        <option value="$PROJECT_DIR$/user_eureka_client/pom.xml" />
-        <option value="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/TaskEurekaClientApplication.java" />
-        <option value="$PROJECT_DIR$/task_eureka_client/src/main/resources/application.yml" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="F:/apache-maven-3.6.1" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -93,121 +444,17 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="332" />
-    <option name="width" value="1292" />
-    <option name="height" value="558" />
+  <component name="ProjectId" id="1V5XxsmKv4ISNFUJM15SVokSWuF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="添加" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="eureka_server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="task_eureka_client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="task_eureka_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="task_eureka_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="user_eureka_client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="user_eureka_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="user_eureka_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="user_eureka_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dapeng_lgq_module3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dapeng_lgq_module3" type="462c0819:PsiDirectoryNode" />
-              <item name="user_eureka_client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -215,33 +462,37 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\ideaIU\IdeaProjects\dapeng_lgq_module3\task_eureka_client\src\main\resources" />
-      <recent name="F:\ideaIU\IdeaProjects\dapeng_lgq_module3\eureka_server\src\main\resources" />
+      <recent name="E:\ideaProject\dapeng_lgq_module3\doc" />
+      <recent name="E:\ideaProject\dapeng_lgq_module3\view_feign\src\main\resources\static\js\myjs" />
+      <recent name="E:\ideaProject\dapeng_lgq_module3\view_feign\src\main\resources\static\css\mycss" />
+      <recent name="E:\ideaProject\dapeng_lgq_module3\view_feign\src\main\resources" />
+      <recent name="E:\ideaProject\dapeng_lgq_module3\view_feign\src\main\resources\statis" />
     </key>
   </component>
   <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserEurekaClientApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka_server" />
       <extension name="coverage">
@@ -281,13 +532,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ViewFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="view_feign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.system.ViewFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.TaskEurekaClientApplication" />
+      <item itemvalue="Spring Boot.UserEurekaClientApplication" />
+      <item itemvalue="Spring Boot.ViewFeignApplication" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ViewFeignApplication" />
         <item itemvalue="Spring Boot.UserEurekaClientApplication" />
         <item itemvalue="Spring Boot.TaskEurekaClientApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.17532468" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="完成" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -301,136 +595,73 @@
       <updated>1576506183504</updated>
       <workItem from="1576506185604" duration="4530000" />
       <workItem from="1576510841859" duration="1659000" />
+      <workItem from="1576544180317" duration="1578000" />
+      <workItem from="1576546213038" duration="2171000" />
+      <workItem from="1576548456937" duration="13878000" />
+      <workItem from="1576565627411" duration="1868000" />
+      <workItem from="1576567544219" duration="1509000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6189000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25566342" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="设计器" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.58709675" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="调试" order="15" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="调色板" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/eureka_server/src/main/resources/appication.yml" />
-    <entry file="file://$PROJECT_DIR$/eureka_server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka_server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_eureka_client/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_eureka_client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_eureka_client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_eureka_client/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka_server/src/main/java/com/system/EurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/TaskEurekaClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/UserEurekaClientApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576550642870">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576550642870" />
+    <state x="1226" y="332" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1576552332445">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1226" y="332" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576552332445" />
+    <state x="782" y="336" key="FileChooserDialogImpl" timestamp="1576564908116">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="336" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576564908116" />
+    <state width="1523" height="231" key="GridCell.Tab.0.bottom" timestamp="1576576143108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143108" />
+    <state width="1523" height="231" key="GridCell.Tab.0.center" timestamp="1576576143108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143108" />
+    <state width="1523" height="231" key="GridCell.Tab.0.left" timestamp="1576576143107">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143107" />
+    <state width="1523" height="231" key="GridCell.Tab.0.right" timestamp="1576576143108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143108" />
+    <state width="1523" height="231" key="GridCell.Tab.1.bottom" timestamp="1576576143109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143109" />
+    <state width="1523" height="231" key="GridCell.Tab.1.center" timestamp="1576576143108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143108" />
+    <state width="1523" height="231" key="GridCell.Tab.1.left" timestamp="1576576143108">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143108" />
+    <state width="1523" height="231" key="GridCell.Tab.1.right" timestamp="1576576143109">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1523" height="231" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576576143108" />
+    <state x="463" y="165" key="SettingsEditor" timestamp="1576544201670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576544201670" />
+    <state x="334" y="227" key="new project wizard" timestamp="1576550932080">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="227" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1576550932080" />
   </component>
   <component name="masterDetails">
     <states>
