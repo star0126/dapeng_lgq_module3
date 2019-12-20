@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap-table.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/info-mgt.css" />
-    <link rel="stylesheet" href="../css/mycss/task_info.css" />
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/bootstrap-table.css}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" th:href="@{/css/base.css}" />
+    <link rel="stylesheet" th:href="@{/css/info-mgt.css}" />
+    <link rel="stylesheet" th:href="@{/css/mycss/task_info.css}" />
     <title>task-info</title>
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/bootstrap-table.js"></script>
-    <script src="../js/bootstrap-table-zh-CN.min.js"></script>
-    <script src="../js/myjs/My97DatePicker/WdatePicker.js" language="javascript" type="text/javascript"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/bootstrap-table.js}"></script>
+    <script th:src="@{/js/bootstrap-table-zh-CN.min.js}"></script>
+    <script th:src="@{/js/myjs/My97DatePicker/WdatePicker.js}" language="javascript" type="text/javascript"></script>
 </head>
 <body >
 <div class="title"><h2>任务列表</h2></div>
@@ -119,5 +120,5 @@
     </div>
 </div>
 </body>
-<script src="../js/myjs/task_info.js"></script>
+<script th:src="@{/js/myjs/task_info.js}"></script>
 </html>

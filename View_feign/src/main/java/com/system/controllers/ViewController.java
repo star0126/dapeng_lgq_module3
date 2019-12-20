@@ -1,12 +1,20 @@
 package com.system.controllers;
 
+import com.alibaba.fastjson.JSON;
 import com.system.consumption.UserClient;
+import com.system.entity.DeptDto;
+import com.system.entity.EmpDto;
+import com.system.util.RedisUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * @ProjectName: dapeng_lgq_module3
@@ -20,6 +28,9 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class ViewController {
 
+    @Autowired
+    private RedisUtil redisUtil;
+
     //跳转到登录页面
     @ApiOperation(value="跳转到登陆、注册页面", notes="登录、注册")
     @GetMapping(value = "/login")
@@ -27,10 +38,16 @@ public class ViewController {
         return "login";
     }
 
-    //登录成功跳转首页映射器
+    //登录成功跳转首页
     @ApiOperation(value="登陆成功跳转首页", notes="首页")
-    @GetMapping(value = "/sys/index")
-    public String goIndex(){
+    @GetMapping(value = "/sys/index/{empid}")
+    public String goIndex(@PathVariable("empid") String empid, HttpSession session){
+        //根据empid去redis取值
+        EmpDto emp = JSON.parseObject( redisUtil.getObject(empid).toString(),EmpDto.class);
+        Object o = redisUtil.getObject(emp.getEmpDept().toString());
+        DeptDto dept = JSON.parseObject(o.toString(),DeptDto.class);
+        session.setAttribute("emp",emp);
+        session.setAttribute("dept",dept);
         return "sys/index";
     }
 
@@ -70,5 +87,15 @@ public class ViewController {
     }
 
 
+    //退出登录，重定向到登录页面
+    @ApiOperation(value="用户退出登录的操作", notes="退出登录")
+    @GetMapping(value = "/sys/outlogin")
+    public  String outlogin(HttpSession session){
+        String  id = ((EmpDto)session.getAttribute("emp")).getEmpId();
+        session.removeAttribute("emp");
+        String[] key = {id};
+        redisUtil.removeRedis(key);
+        return "redirect:/login";
+    }
 
 }

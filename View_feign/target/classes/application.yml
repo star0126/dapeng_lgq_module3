@@ -18,5 +18,18 @@ eureka:
 
 
 spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 1000
+    password:
+    database: 0
   application:
     name: view-feign
+  thymeleaf:
+    cache: false  #禁用模板引擎的缓存
+
+#配置使用断路器
+feign:
+  hystrix:
+    enabled: true

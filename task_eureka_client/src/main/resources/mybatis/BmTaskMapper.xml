@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.system.dao.BmTaskMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.system.entity.BmTask">
+        <id column="task_id" property="taskId" />
+        <result column="task_name" property="taskName" />
+        <result column="task_type" property="taskType" />
+        <result column="task_creator" property="taskCreator" />
+        <result column="creator_dept" property="creatorDept" />
+        <result column="creat_time" property="creatTime" />
+        <result column="end_time" property="endTime" />
+        <result column="plan_start_time" property="planStartTime" />
+        <result column="plan_end_time" property="planEndTime" />
+        <result column="task_executor" property="taskExecutor" />
+        <result column="task_status" property="taskStatus" />
+        <result column="task_spec" property="taskSpec" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        task_id, task_name, task_type, task_creator, creator_dept, creat_time, end_time, plan_start_time, plan_end_time, task_executor, task_status, task_spec
+    </sql>
+
+</mapper>

@@ -13,6 +13,7 @@
         <module>user_eureka_client</module>
         <module>task_eureka_client</module>
         <module>view_feign</module>
+        <module>api</module>
     </modules>
 
 

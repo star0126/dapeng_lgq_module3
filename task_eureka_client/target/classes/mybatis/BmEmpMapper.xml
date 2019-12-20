@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.system.dao.BmEmpMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.system.entity.BmEmp">
+        <id column="emp_id" property="empId" />
+        <result column="emp_pwd" property="empPwd" />
+        <result column="emp_name" property="empName" />
+        <result column="emp_sex" property="empSex" />
+        <result column="emp_dept" property="empDept" />
+        <result column="emp_role" property="empRole" />
+        <result column="emp_status" property="empStatus" />
+        <result column="emp_email" property="empEmail" />
+        <result column="emp_phone" property="empPhone" />
+        <result column="jur_ide" property="jurIde" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        emp_id, emp_pwd, emp_name, emp_sex, emp_dept, emp_role, emp_status, emp_email, emp_phone, jur_ide
+    </sql>
+
+</mapper>

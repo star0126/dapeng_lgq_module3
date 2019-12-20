@@ -125,5 +125,5 @@ function upds() {
 }
 
 function checkCancel() {
-    location.href="/sys/emp_info";
+    location.href="/emp/emp_info";
 }

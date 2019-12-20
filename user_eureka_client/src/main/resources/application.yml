@@ -17,5 +17,29 @@ info: #在配置信息中加载关于
   build.version: "@project.version@"
 
 spring:
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 1000
+    password:
+    database: 0
   application:
     name: user-eureka-client
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot_module?useSSL=true&serverTimezone=UTC
+    username: root
+    password: 123456
+
+mybatis-plus:
+  type-aliases-package: com.system.entity    # 所有Entity别名类所在包
+  mapper-locations:
+    - classpath:mybatis/**/*.xml                       # mapper映射文件
+  configuration:
+    map-underscore-to-camel-case: true  # 开启驼峰uName自动映射到u_name
+  global-config:
+    refresh-mapper: true
+
+logging:
+  level:
+    com.system.dao: debug

@@ -32,13 +32,13 @@ function logins() {
         var empId = $("#empId").val();
         var empPwd = $("#empPwd").val();
         var data = {"empId":empId,"empPwd":empPwd};
-        $.post("/emp_login",data,function (dt) {
+        $.post("/login",data,function (dt) {
             $("#empId-info").html("");
             $("#empPwd-info").html("");
             $("#emp-info").html("");
             switch (dt.code) {
                 case 0:  //登录成功
-                    location.href="/index";
+                    location.href="/sys/index/"+dt.data.empid;
                     break;
                 case 1:
                     $("#empId-info").html(dt.msg);
@@ -210,7 +210,7 @@ $("#reg").click(function(){
         var empId = $("#empIds").val();
         var data = {"empId":empId,"empName":empName,"empPwd":empPwd,"empSex":empSex,"empDept":empDept,
                     "empRole":empRole,"empStatus":empStatus,"empEmail":empEmail,"empPhone":empPhone};
-        $.post("/emp_register",data,function (sig) {
+        $.post("/sys/register",data,function (sig) {
             if (sig>0){
                 $("#info-modal2").html("注册成功！初始密码：123456，请返回登录！");
                 $("#alertModel2").modal("show");
