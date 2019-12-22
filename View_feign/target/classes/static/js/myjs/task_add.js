@@ -3,7 +3,7 @@
 //获取员工信息
 function taskExecutor() {
     var taskExecutor = $("#taskExecutor");
-    $.post("/emp/lookup/list",function (list) {
+    $.post("/sys/lookup/list",function (list) {
         var executor = "<option value=\"\">全部</option>";
         for (var i=0;i<list.length;i++){
                 executor+="<option value='"+list[i].empId+"'>"+list[i].empName+"</option>";
@@ -15,7 +15,7 @@ taskExecutor();
 
 //取消的方法
 function checkCancel() {
-    location.href="/task_info";
+    location.href="/task/task_info";
 }
 
 //保存的方法
@@ -39,7 +39,7 @@ function adds() {
     if (!ckendTime()){flag=false};
     if (!cktaskExecutor()){flag=false};
     if (flag==true){
-        $.post("/task/add_task",data,function (sign) {
+        $.post("/sys/addTask",data,function (sign) {
             if (sign>0){ //成功
                 $("#info-modal2").html("保存成功，是否转到列表！");
                 $("#alertModel2").modal('show');
@@ -75,7 +75,7 @@ function creat() {
     if (!ckendTime()){flag=false};
     if (!cktaskExecutor()){flag=false};
     if (flag==true){
-        $.post("/task/add_task",data,function (sign2) {
+        $.post("/sys/addTask",data,function (sign2) {
             if (sign2>0){ //成功
                 $("#info-modal2").html("创建成功，是否转到列表！");
                 $("#alertModel2").modal('show');
@@ -94,7 +94,7 @@ function creat() {
 function oks(obj) {
     $("#alertModel2").modal('hide');
     if (obj==0){
-        location.href="/task_info";
+        location.href="/task/task_info";
     }
 }
 

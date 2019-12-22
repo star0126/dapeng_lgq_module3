@@ -3,16 +3,23 @@ package com.system.controllers;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.system.dao.BmDeptMapper;
+import com.system.dao.BmEmpMapper;
+import com.system.dao.BmTaskInfoMapper;
 import com.system.dao.BmTaskMapper;
 import com.system.entity.BmTask;
+import com.system.entity.BmTaskInfo;
 import com.system.entity.TaskDto;
+import com.system.entity.TaskInfoDto;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import org.springframework.stereotype.Controller;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -35,6 +42,12 @@ public class BmTaskController {
 
     @Autowired
     private BmTaskMapper taskMapper;
+    @Autowired
+    private BmTaskInfoMapper taskInfoMapper;
+    @Autowired
+    private BmEmpMapper empMapper;
+    @Autowired
+    private BmDeptMapper deptMapper;
 
     @ApiOperation(value="查找task列表操作", notes="查找任务列表")
     @PostMapping(value = "/list")
@@ -42,7 +55,7 @@ public class BmTaskController {
                                     @RequestParam(value = "pageIndex",required = true,defaultValue = "0")Integer pageIndex,
                                     @RequestParam(value = "pageSize",required = true,defaultValue = "5")Integer pageSize){
         Map<Object,Object> map = new HashMap<Object, Object>();
-        QueryWrapper<BmTask> queryWrapper = new QueryWrapper<>();
+        QueryWrapper<BmTaskInfo> queryWrapper = new QueryWrapper<>();
         if (taskDto!=null ){
             //状态
             if (taskDto.getTaskStatus()!=null && !"".equals(taskDto.getTaskStatus())){
@@ -77,7 +90,7 @@ public class BmTaskController {
                 queryWrapper.le("creat_time",edtime);
             }
         }
-        int total = taskMapper.selectCount(queryWrapper);
+        int total = taskInfoMapper.selectCount(queryWrapper);
         //动态拼接sql
         String lastSql = " ";
         //排序
@@ -87,11 +100,74 @@ public class BmTaskController {
         //分页
         lastSql += " limit " + pageIndex + "," + pageSize;
         queryWrapper.last(lastSql);
-        List<BmTask> data = taskMapper.selectList(queryWrapper);
+        List<BmTaskInfo> data = taskInfoMapper.selectList(queryWrapper);
         map.put("total",total);
         map.put("data",data);
         return map;
     }
+
+
+    @ApiOperation(value="新增任务的操作", notes="新增任务")
+    @PostMapping(value = "/task_add")
+    public int taskAdd(@RequestBody TaskDto taskDto){
+        int sign;
+        try {
+            BmTask task = this.packTask(taskDto);
+            SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String ed = sd.format(taskDto.getEdtime());
+            Date parse = sd.parse(ed);
+            task.setEndTime(parse)
+                    .setCreatTime(new Date());
+            sign = taskMapper.insert(task);
+            if (sign>0){
+                BmTaskInfo taskInfo = packTaskInfo(task);
+                sign = taskInfoMapper.insert(taskInfo);
+
+            }
+        } catch (ParseException e) {
+            sign = 0;
+            e.printStackTrace();
+        }
+        return sign;
+
+    }
+
+    @ApiOperation(value="修改任务的操作", notes="修改任务")
+    @PostMapping(value = "/upd_task")
+    public int updTask(@RequestBody TaskDto taskDto){
+        int sign = 0;
+        try {
+            SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String ed = sd.format(taskDto.getEdtime());
+            String bg = sd.format(taskDto.getBgtime());
+            Date endTime = sd.parse(ed);
+            Date creatTime = sd.parse(bg);
+            taskDto.setEndTime(endTime)
+                    .setCreatTime(creatTime);
+            BmTask task = this.packTask(taskDto);
+            sign = taskMapper.updateById(task);
+            if (sign>0){
+                BmTaskInfo taskInfo = packTaskInfo(task);
+                sign=taskInfoMapper.updateById(taskInfo);
+            }
+        } catch (ParseException e) {
+            e.printStackTrace();
+        } finally {
+            return sign;
+        }
+
+    }
+
+    @ApiOperation(value="删除任务的操作", notes="删除任务")
+    @PostMapping(value = "/del_task")
+    public int delTask(@RequestParam(value = "ids") List<Integer> ids){
+        int sign = taskMapper.deleteBatchIds(ids);
+        if (sign>0){
+            sign = taskInfoMapper.deleteBatchIds(ids);
+        }
+        return sign;
+    }
+
 
     //task封装
     private BmTask packTask(TaskDto taskDto){
@@ -109,8 +185,30 @@ public class BmTaskController {
                 .setTaskStatus(taskDto.getTaskStatus())
                 .setTaskSpec(taskDto.getTaskSpec());
         return task;
-
     }
+
+    //task转换为taskinfo
+    private BmTaskInfo packTaskInfo(BmTask task){
+        BmTaskInfo taskInfo = new BmTaskInfo();
+        taskInfo.setTaskId(task.getTaskId())
+                .setTaskName(task.getTaskName())
+                .setTaskType(task.getTaskType())
+                .setTaskCreator(task.getTaskCreator())
+                .setCreatorName(empMapper.selectById(task.getTaskCreator()).getEmpName())
+                .setCreatorDept(task.getCreatorDept())
+                .setDeptName(deptMapper.selectById(task.getCreatorDept()).getDeptName())
+                .setCreatTime(task.getCreatTime())
+                .setEndTime(task.getEndTime())
+                .setPlanEndTime(task.getPlanEndTime())
+                .setPlanStartTime(task.getPlanStartTime())
+                .setTaskExecutor(task.getTaskExecutor())
+                .setExecutor(empMapper.selectById(task.getTaskExecutor()).getEmpName())
+                .setTaskStatus(task.getTaskStatus())
+                .setTaskSpec(task.getTaskSpec());
+        return taskInfo;
+    }
+
+
 
 }
 

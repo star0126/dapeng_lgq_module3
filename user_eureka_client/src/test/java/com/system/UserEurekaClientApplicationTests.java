@@ -33,7 +33,7 @@ public class UserEurekaClientApplicationTests {
     /**
      * 数据库链接
      */
-    private static String URL = "jdbc:mysql://localhost:3306/boot_module?serverTimezone=GMT&useUnicode=true&characterEncoding=UTF8";
+    private static String URL = "jdbc:mysql://localhost:3306/boot_module?serverTimezone=GMT&useUnicode=true&characterEncoding=UTF8;useSSL=false/true";
     /**
      * 数据库账号
      */
@@ -41,7 +41,7 @@ public class UserEurekaClientApplicationTests {
     /**
      * 数据库密码
      */
-    private static String PASS_WORD = "123456";
+    private static String PASS_WORD = "lgq123456";
     /**
      * 生成模块所在路径(一般是项目的基本路径)
      */

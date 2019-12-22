@@ -4,7 +4,7 @@
 function taskExecutor() {
     var taskExecutor = $("#taskExecutor");
     var teor = $("#teor").val();
-    $.post("/emp/lookup/list",function (list) {
+    $.post("/sys/lookup/list",function (list) {
         var executor = "<option value=\"\">全部</option>";
         for (var i=0;i<list.length;i++){
             if (teor==list[i].empId){
@@ -45,7 +45,7 @@ function iso() {
     if (!cktaskExecutor()){flag=false};
     if (flag==true){
         $("#creatorDept").removeAttr("disabled");
-        $.post("/task/upd_task",data,function (sign) {
+        $.post("/sys/updTask",data,function (sign) {
             if (sign>0){ //成功
                 $("#info-modal2").html("修改成功，是否转到列表！");
                 $("#alertModel2").modal('show');
@@ -65,13 +65,13 @@ function iso() {
 function oks(obj) {
     $("#alertModel2").modal('hide');
     if (obj==0){
-        location.href="/task_info";
+        location.href="/task/task_info";
     }
 }
 
 //取消修改
 function noo() {
-    location.href="/task_info";
+    location.href="/task/task_info";
 }
 
 

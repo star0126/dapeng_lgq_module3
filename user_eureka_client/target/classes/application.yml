@@ -26,10 +26,10 @@ spring:
   application:
     name: user-eureka-client
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/boot_module?useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/boot_module?useSSL=true&serverTimezone=UTC&autoReconnect=true&failOverReadOnly=false
     username: root
-    password: 123456
+    password: lgq123456
 
 mybatis-plus:
   type-aliases-package: com.system.entity    # 所有Entity别名类所在包

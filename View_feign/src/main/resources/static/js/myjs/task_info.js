@@ -244,7 +244,7 @@ function del() {
 
 function deleteMs(ids) {
     $.ajax({
-        url: "/task/del",
+        url: "/sys/delTask",
         data: "ids=" + ids,
         type: "post",
         dataType: "json",

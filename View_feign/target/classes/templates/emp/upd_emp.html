@@ -45,12 +45,12 @@
     <div style="margin:0 0 20px 20px">
         <label>部门：</label>
         <select id="empDept" name="empDept"  th:value="${session.emp.empDept}">
-            <option th:selected="${session.emp.empDept=='2'}" value='2'>运营部</option>
-            <option th:selected="${session.emp.empDept=='3'}" value='3'>销售部</option>
-            <option th:selected="${session.emp.empDept=='4'}" value='4'>运营一组</option>
-            <option th:selected="${session.emp.empDept=='5'}" value='5'>运营二组</option>
-            <option th:selected="${session.emp.empDept=='6'}" value='6'>销售一组</option>
-            <option th:selected="${session.emp.empDept=='7'}" value='7'>销售二组</option>
+            <option th:selected="${session.emp.empDept==2}" value='2'>运营部</option>
+            <option th:selected="${session.emp.empDept==3}" value='3'>销售部</option>
+            <option th:selected="${session.emp.empDept==4}" value='4'>运营一组</option>
+            <option th:selected="${session.emp.empDept==5}" value='5'>运营二组</option>
+            <option th:selected="${session.emp.empDept==6}" value='6'>销售一组</option>
+            <option th:selected="${session.emp.empDept==7}" value='7'>销售二组</option>
         </select>
         <span style="color: red;font-weight: bolder">*</span><br>
         <div id="empDept_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>

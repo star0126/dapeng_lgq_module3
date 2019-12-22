@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -35,19 +36,20 @@
     </div>
     <div style="margin:0 0 20px 20px">
         <label>创建者编号：</label>
-        <input id="taskCreator" name="taskCreator" value="" type="text">
+        <input id="taskCreator" name="taskCreator" th:value="${session.emp.empId}"
+               type="text" readonly="readonly">
         <span style="color: red;font-weight: bolder">*</span><br>
         <div id="taskCreator_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
     </div>
     <div style="margin:0 0 20px 20px">
         <label>创建者部门：</label>
-        <select id="creatorDept" name="creatorDept">
-            <option value="2">运营部</option>
-            <option value="3">销售部</option>
-            <option value="4">运营一组</option>
-            <option value="5">运营二组</option>
-            <option value="6">销售一组</option>
-            <option value="7">销售二组</option>
+        <select id="creatorDept" name="creatorDept" th:value="${session.emp.empDept}">
+            <option th:selected="${session.emp.empDept==2}" value='2'>运营部</option>
+            <option th:selected="${session.emp.empDept==3}" value='3'>销售部</option>
+            <option th:selected="${session.emp.empDept==4}" value='4'>运营一组</option>
+            <option th:selected="${session.emp.empDept==5}" value='5'>运营二组</option>
+            <option th:selected="${session.emp.empDept==6}" value='6'>销售一组</option>
+            <option th:selected="${session.emp.empDept==7}" value='7'>销售二组</option>
         </select><span style="color: red;font-weight: bolder">*</span><br>
         <div id="creatorDept_info" style="color: red;font-weight: bolder;margin-left: 205px;"></div>
     </div>

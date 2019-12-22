@@ -28,36 +28,8 @@ import java.util.List;
 @RequestMapping("/emp")
 public class BmEmpController {
 
-    @Autowired
-    private IBmEmpService empService;
 
-    //异步条件获取Emp
-    @ApiOperation(value="查找task列表操作", notes="查找任务列表")
-    @PostMapping(value = "/lookup/list")
-    public Object getEmpList(){
-        List<BmEmp> empList = empService.list();
-        List<EmpDto> empDtos = new ArrayList<EmpDto>();
-        for (BmEmp emp:empList){
-            empDtos.add(this.userPacka(emp));
-        }
-        return empDtos;
-    }
 
-    //用户封装
-    private EmpDto userPacka(BmEmp emp){
-        EmpDto empDto = new EmpDto();
-        empDto.setEmpId(emp.getEmpId())
-                .setEmpPwd(emp.getEmpPwd())
-                .setEmpName(emp.getEmpName())
-                .setEmpSex(emp.getEmpSex())
-                .setEmpDept(emp.getEmpDept())
-                .setEmpRole(emp.getEmpRole())
-                .setEmpStatus(emp.getEmpStatus())
-                .setEmpEmail(emp.getEmpEmail())
-                .setEmpPhone(emp.getEmpPhone())
-                .setJurIde(emp.getJurIde());
-        return empDto;
-    }
 
 }
 

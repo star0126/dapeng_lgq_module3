@@ -9,6 +9,7 @@ import com.system.entity.EmpDto;
 import com.system.mytemplate.ErrorMessage;
 import com.system.mytemplate.GeneralException;
 import com.system.mytemplate.JsonResult;
+import com.system.service.IBmEmpService;
 import com.system.util.RedisUtil;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,9 @@ import org.springframework.stereotype.Controller;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -38,6 +41,8 @@ public class BmEmpController {
     BmEmpMapper bmEmpMapper;
     @Autowired
     BmDeptMapper bmDeptMapper;
+    @Autowired
+    IBmEmpService empService;
     @Autowired
     RedisUtil redisUtil;
 
@@ -87,6 +92,35 @@ public class BmEmpController {
         BmEmp regEmp = userPacka(emp);
         int sign=bmEmpMapper.insert(regEmp);
         return sign;
+    }
+
+
+    //异步条件获取Emp
+    @ApiOperation(value="查找task列表操作", notes="查找任务列表")
+    @PostMapping(value = "/lookup/list")
+    public Object getEmpList(){
+        List<BmEmp> empList = empService.list();
+        List<EmpDto> empDtos = new ArrayList<EmpDto>();
+        for (BmEmp emp:empList){
+            empDtos.add(this.userPacka(emp));
+        }
+        return empDtos;
+    }
+
+    //用户封装
+    private EmpDto userPacka(BmEmp emp){
+        EmpDto empDto = new EmpDto();
+        empDto.setEmpId(emp.getEmpId())
+                .setEmpPwd(emp.getEmpPwd())
+                .setEmpName(emp.getEmpName())
+                .setEmpSex(emp.getEmpSex())
+                .setEmpDept(emp.getEmpDept())
+                .setEmpRole(emp.getEmpRole())
+                .setEmpStatus(emp.getEmpStatus())
+                .setEmpEmail(emp.getEmpEmail())
+                .setEmpPhone(emp.getEmpPhone())
+                .setJurIde(emp.getJurIde());
+        return empDto;
     }
 
     //用户封装

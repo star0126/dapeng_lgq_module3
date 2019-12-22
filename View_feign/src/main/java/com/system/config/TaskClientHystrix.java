@@ -2,9 +2,11 @@ package com.system.config;
 
 import com.system.consumption.TaskClient;
 import com.system.entity.TaskDto;
+import com.system.entity.TaskInfoDto;
 import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,4 +29,32 @@ public class TaskClientHystrix implements TaskClient {
         map.put("data",0);
         return map;
     }
+
+    //新增一条task的熔断
+    @Override
+    public int addTask(TaskDto taskDto) {
+        return 0;
+    }
+
+    //修改task的熔断
+    @Override
+    public int updTask(TaskDto taskDto) {
+        return 0;
+    }
+
+    //批量删除task的熔断
+    @Override
+    public int delTask(List<Integer> ids) {
+        return 0;
+    }
+
+    //获取一条task的熔断
+    @Override
+    public TaskInfoDto getTask(Integer taskId) {
+        return new TaskInfoDto();
+    }
+
+
+
+
 }

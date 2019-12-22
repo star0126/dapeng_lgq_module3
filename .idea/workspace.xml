@@ -2,102 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1cc22c6-f68c-4711-a70c-b470fcbe8b22" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/config/TaskClientHystrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/config/UserClientHystrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/controllers/TaskServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/controllers/UserServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/entity/DeptDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/entity/EmpDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/entity/TaskDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/mytemplate/JsonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/util/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/util/StringToDateConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmDeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmEmpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmTaskController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/dao/BmDeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/dao/BmEmpMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/dao/BmTaskMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/entity/BmDept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/entity/BmEmp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/entity/BmTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/entity/EmpDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/entity/TaskDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/IBmDeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/IBmEmpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/IBmTaskService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/impl/BmDeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/impl/BmEmpServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/impl/BmTaskServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/resources/mybatis/BmDeptMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/resources/mybatis/BmEmpMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/resources/mybatis/BmTaskMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/test/java/com/system/TaskEurekaClientApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/config/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/controllers/BmDeptController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/controllers/BmEmpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/dao/BmDeptMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/dao/BmEmpMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/entity/BmDept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/entity/BmEmp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/entity/EmpDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/mytemplate/ErrorMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/mytemplate/GeneralException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/mytemplate/JsonResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/service/IBmDeptService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/service/IBmEmpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/service/impl/BmDeptServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/service/impl/BmEmpServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/util/RedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/resources/mybatis/BmDeptMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/main/resources/mybatis/BmEmpMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_eureka_client/src/test/java/com/system/UserEurekaClientApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dapeng_lgq_module3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/entity/TaskInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/entity/TaskInfoDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmTaskInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/dao/BmTaskInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/entity/BmTaskInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/entity/TaskInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/IBmTaskInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/service/impl/BmTaskInfoServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/src/main/resources/mybatis/BmTaskInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/controllers/BmTaskInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/dao/BmTaskInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/entity/BmTaskInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/entity/TaskInfoDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/service/IBmTaskInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/service/impl/BmTaskInfoServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/mybatis/BmTaskInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/src/main/java/com/system/config/TaskClientHystrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/config/TaskClientHystrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/TaskClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/TaskClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/userClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/userClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/src/main/java/com/system/consumption/userClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/src/main/java/com/system/controllers/TaskServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/controllers/TaskServiceController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/src/main/java/com/system/controllers/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/java/com/system/controllers/ViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_add.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/upd_emp.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/upd_emp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/upd_pwd.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/upd_pwd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/emp_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/emp_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_upd.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/static/js/myjs/task_upd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/upd_emp.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/upd_emp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/upd_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/emp/upd_pwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/templates/sys/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/sys/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_upd.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/src/main/resources/templates/task/task_upd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/com/system/config/TaskClientHystrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/config/TaskClientHystrix.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/target/classes/com/system/consumption/TaskClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/consumption/TaskClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/com/system/consumption/UserClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/consumption/UserClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/com/system/controllers/TaskServiceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/controllers/TaskServiceController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/target/classes/com/system/controllers/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/com/system/controllers/ViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_add.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_add.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/upd_emp.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/upd_emp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/upd_pwd.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/upd_pwd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/emp_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/emp_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_upd.js" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/static/js/myjs/task_upd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/upd_emp.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/upd_emp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/upd_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/emp/upd_pwd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/templates/sys/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/sys/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_info.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka_server/target/classes/META-INF/eureka_server.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_upd.html" beforeDir="false" afterPath="$PROJECT_DIR$/View_feign/target/classes/templates/task/task_upd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/boot_moduleDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/doc/boot_moduleDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/数据库设计.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/doc/数据库设计.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_eureka_client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/TaskEurekaClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/TaskEurekaClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmEmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmEmpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmTaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/src/main/java/com/system/controllers/BmTaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_eureka_client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/src/test/java/com/system/TaskEurekaClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/src/test/java/com/system/TaskEurekaClientApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_eureka_client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/TaskEurekaClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/TaskEurekaClientApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/controllers/BmEmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/controllers/BmEmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/controllers/BmTaskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/target/classes/com/system/controllers/BmTaskController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_eureka_client/target/test-classes/com/system/TaskEurekaClientApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/task_eureka_client/target/test-classes/com/system/TaskEurekaClientApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_eureka_client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/UserEurekaClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/UserEurekaClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/controllers/BmEmpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/src/main/java/com/system/controllers/BmEmpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_eureka_client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_eureka_client/src/test/java/com/system/UserEurekaClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/src/test/java/com/system/UserEurekaClientApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user_eureka_client/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_eureka_client/target/classes/com/system/UserEurekaClientApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/target/classes/com/system/UserEurekaClientApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_eureka_client/target/classes/com/system/controllers/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_eureka_client/target/classes/com/system/controllers/BmEmpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/target/classes/com/system/controllers/BmEmpController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_eureka_client/target/test-classes/com/system/UserEurekaClientApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/user_eureka_client/target/test-classes/com/system/UserEurekaClientApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +87,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -161,11 +128,23 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\dapeng_lgq_module3\task_eureka_client\src\main\resources\mybatis" />
+      <recent name="E:\ideaProject\dapeng_lgq_module3\task_eureka_client\src\main\resources" />
+      <recent name="E:\ideaProject\dapeng_lgq_module3\user_eureka_client\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.system" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.system.entity" />
+      <recent name="com.system.dao" />
+      <recent name="com.system.util" />
+      <recent name="com.system.mytemplate" />
+      <recent name="com.system.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ideaProject\dapeng_lgq_module3\api\src\main\resources" />
@@ -173,16 +152,6 @@
       <recent name="E:\ideaProject\dapeng_lgq_module3\doc" />
       <recent name="E:\ideaProject\dapeng_lgq_module3\view_feign\src\main\resources\static\js\myjs" />
       <recent name="E:\ideaProject\dapeng_lgq_module3\view_feign\src\main\resources\static\css\mycss" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.system.util" />
-      <recent name="com.system.entity" />
-      <recent name="com.system.mytemplate" />
-      <recent name="com.system.config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ideaProject\dapeng_lgq_module3\task_eureka_client\src\main\resources" />
-      <recent name="E:\ideaProject\dapeng_lgq_module3\user_eureka_client\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -192,7 +161,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserEurekaClientApplication">
+  <component name="RunManager" selected="JUnit.TaskEurekaClientApplicationTests.contextLoads">
     <configuration name="TaskEurekaClientApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_eureka_client" />
       <extension name="coverage">
@@ -303,11 +272,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="运行" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="完成" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
@@ -339,6 +303,9 @@
       <workItem from="1576803103629" duration="4009000" />
       <workItem from="1576807130639" duration="20281000" />
       <workItem from="1576838729489" duration="3256000" />
+      <workItem from="1576936088507" duration="5075000" />
+      <workItem from="1576941178376" duration="2813000" />
+      <workItem from="1576993228370" duration="20570000" />
     </task>
     <task id="LOCAL-00001" summary="2019年12月17日 17:55  李国庆修改">
       <created>1576576608534</created>
@@ -367,9 +334,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1226" y="332" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576552332445" />
-    <state x="1429" y="237" key="#com.intellij.ide.util.MemberChooser" timestamp="1576830293792">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="990" y="164" key="#com.intellij.ide.util.MemberChooser" timestamp="1577020783749">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="990" y="164" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577020783749" />
     <state x="1429" y="237" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1576830293792" />
     <state x="519" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576647501585">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -383,65 +351,79 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="534" y="133" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1576576605706" />
-    <state width="400" height="466" key="DebuggerActiveHint" timestamp="1576720384170">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="410" height="370" key="DebuggerActiveHint" timestamp="1577006220096">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="410" height="370" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1577006220096" />
     <state width="400" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1576720384170" />
     <state x="782" y="336" key="FileChooserDialogImpl" timestamp="1576805889075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="782" y="336" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576805889075" />
-    <state width="1523" height="508" key="GridCell.Tab.0.bottom" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.0.bottom" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="508" key="GridCell.Tab.0.center" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.0.center" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="508" key="GridCell.Tab.0.left" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.0.left" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="508" key="GridCell.Tab.0.right" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.0.right" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="508" key="GridCell.Tab.1.bottom" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.1.bottom" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="508" key="GridCell.Tab.1.center" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.1.center" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="508" key="GridCell.Tab.1.left" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.1.left" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="508" key="GridCell.Tab.1.right" timestamp="1576841301260">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="73" key="GridCell.Tab.1.right" timestamp="1577022482013">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="73" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577022482013" />
     <state width="1523" height="508" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576841301260" />
-    <state width="1523" height="480" key="GridCell.Tab.2.bottom" timestamp="1576755276119">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="222" key="GridCell.Tab.2.bottom" timestamp="1577007494673">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="222" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577007494673" />
     <state width="1523" height="480" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576755276119" />
-    <state width="1523" height="480" key="GridCell.Tab.2.center" timestamp="1576755276119">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="222" key="GridCell.Tab.2.center" timestamp="1577007494673">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="222" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1577007494673" />
     <state width="1523" height="480" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576755276119" />
-    <state width="1523" height="480" key="GridCell.Tab.2.left" timestamp="1576755276119">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="222" key="GridCell.Tab.2.left" timestamp="1577007494673">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="222" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1577007494673" />
     <state width="1523" height="480" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576755276119" />
-    <state width="1523" height="480" key="GridCell.Tab.2.right" timestamp="1576755276119">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1206" height="222" key="GridCell.Tab.2.right" timestamp="1577007494673">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1206" height="222" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1577007494673" />
     <state width="1523" height="480" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576755276119" />
-    <state x="463" y="165" key="SettingsEditor" timestamp="1576718080093">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="370" y="116" key="SettingsEditor" timestamp="1576997712315">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="370" y="116" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576997712315" />
     <state x="463" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576718080093" />
     <state x="584" y="275" key="Vcs.Push.Dialog.v2" timestamp="1576576623296">
       <screen x="0" y="0" width="1920" height="1040" />

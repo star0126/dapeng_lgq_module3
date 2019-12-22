@@ -44,7 +44,7 @@ CREATE TABLE bm_task_info(
   task_name VARCHAR(30) ,
   task_type VARCHAR(10) ,
   task_creator VARCHAR(20) ,
-  creator_name VARCHAR(30) ,
+  creator_name VARCHAR(15) ,
   creator_dept INT ,
   dept_name VARCHAR(15),
   creat_time DATETIME DEFAULT '1970-01-01 01:01:01',
@@ -52,11 +52,23 @@ CREATE TABLE bm_task_info(
   plan_start_time DATETIME DEFAULT '1970-01-01 01:01:01',
   plan_end_time DATETIME DEFAULT '1970-01-01 01:01:01',
   task_executor VARCHAR(20),
-  executor VARCHAR(30) ,
+  executor VARCHAR(15) ,
   task_status VARCHAR(10),
   task_spec TEXT
 );
 
+
+ insert into bm_task_info
+(
+select
+task_id,task_name,task_type,task_creator,
+(select emp_name from bm_emp e where e.emp_id=bm_task.task_creator) creator_name,
+creator_dept,
+(select dept_name from bm_dept d where d.dept_id=bm_task.creator_dept) dept_name,
+creat_time,end_time,plan_start_time,plan_end_time,task_executor,
+(select  emp_name from bm_emp e where e.emp_id=bm_task.task_executor ) executore,
+task_status,task_spec from bm_task
+);
 
 
 

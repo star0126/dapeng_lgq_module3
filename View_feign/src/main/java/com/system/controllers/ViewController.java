@@ -1,19 +1,21 @@
 package com.system.controllers;
 
 import com.alibaba.fastjson.JSON;
+import com.system.consumption.TaskClient;
 import com.system.consumption.UserClient;
 import com.system.entity.DeptDto;
 import com.system.entity.EmpDto;
+import com.system.entity.TaskInfoDto;
 import com.system.util.RedisUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -96,6 +98,18 @@ public class ViewController {
         String[] key = {id};
         redisUtil.removeRedis(key);
         return "redirect:/login";
+    }
+
+    @Autowired
+    private TaskClient taskClient;
+    //跳转到修改task的页面
+    @ApiOperation(value="内联框架内修改任务信息", notes="修改任务信息")
+    @GetMapping(value = "/upd/{taskId}")
+    public String updTask(@PathVariable("taskId") Integer taskId,
+                          Model model){
+        TaskInfoDto taskInfoDto = taskClient.getTask(taskId);
+        model.addAttribute("tk",taskInfoDto);
+        return "/task/task_upd";
     }
 
 }
